@@ -1,0 +1,9 @@
+# Nix generated
+/.pre-commit-config.yaml
+/result
+
+# LaTeX builds
+/*.pdf
+/*.dvi
+/build
+/.cache
