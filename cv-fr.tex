@@ -1,0 +1,163 @@
+% LTeX: language=fr
+
+\documentclass[alternative]{yaac-another-awesome-cv}
+\name{Loïc}{Reynier}
+\tagline{Ingénieur en Mécanique | Doctorant en Mécanique des Fluides}
+\photo{3.5cm}{assets/Loic_Reynier_EFMC14}
+\socialinfo{
+  \linkedin{loicreynier}
+  \github{loicreynier}
+  \email{loic@loicreynier.fr}}
+
+\hypersetup{
+  pdfauthor={Loïc Reynier},
+  pdftitle={CV Loïc Reynier},
+}
+
+\addbibresource{bib/references.bib}
+\begin{document}
+
+\makecvheader
+\makecvfooter
+  {\textsc{\today}} % \selectlanguage{english}\today
+  {\textsc{Loïc Reynier - CV}}
+  {\thepage}
+
+\sectionTitle{Formations}{\faGraduationCap}
+\begin{scholarship}
+  \scholarshipentry{2020-2023}
+    {Doctorat en Mécanique des Fluides au LMFA (Université Lyon1)}
+  \scholarshipentry{2017-2020}
+    {Diplôme d'Ingénieur en Mécanique de Polytech Lyon (Université Lyon1)}
+  \scholarshipentry{2017-2020}
+    {Master Mécanique des Fluides et Énergétique de l'Université Lyon1 (double diplôme)}
+  \scholarshipentry{2015-2017}
+    {Classes préparatoires aux grandes écoles à Polytech Marseille (Université Aix-Marseille)}
+\end{scholarship}
+
+\sectionTitle{Expériences de Recherche}{\faFlask}
+\begin{experiences}
+  \experience
+    {Aujourd'hui}
+    {Thèse en mécanique des fluides}{LMFA (Université Lyon1)}{Lyon, France}
+    {Octobre 2020}
+    {
+      \textit{Transition et turbulence des écoulements incompressibles à densité variable}
+      \begin{itemize}
+        \item Développement d'un forçage pour la turbulence isotrope à densité variable
+        \item Simulation DNS et analyse statistique de la turbulence isotrope
+        \item Simulation DNS et analyse statistique de la transition d'un jet temporel à densité variable\\
+              vers la turbulence isotrope
+      \end{itemize}
+    }
+    {
+      densité variable,
+      NS incompressible,
+      turbulence,
+      DNS,
+      méthodes spectrales,
+      schémas implicites,
+      préconditionnement
+    }
+  \emptySeparator
+  \experience
+    {Septembre 2020}
+    {Stage R\&D de fin d'études}{LMFA (Université Lyon1)}{Lyon, France}
+    {Avril 2020}
+    {
+      \textit{Simulation haute performance des écoulements inhomogènes}
+      \begin{itemize}
+        \item Développement de schémas d'ordres élevés semi-implicites pour NS incompressible
+        \item Validation des schémas sur des simulations hautes résolutions
+        \item Création d'un module d'analyse statistique des écoulements turbulents
+      \end{itemize}
+    }
+    {
+      densité variable,
+      NS incompressible,
+      turbulence,
+      DNS,
+      méthodes spectrales,
+      schémas implicites,
+      préconditionnement
+    }
+  \emptySeparator
+  \experience
+    {Août 2019}
+    {Stage R\&D}{Louisiana State University}{Bâton Rouge, USA}
+    {Mars 2019}
+    {
+      \textit{Simulation de l'atomisation par forces centrifuges de poudre métallique pour fabrication additive}
+      \begin{itemize}
+        \item Développement de modèles volume-of-fluid et level-set
+        \item Simulation de l'atomisation et comparaison des modèles avec les modèles turbulents d'Ansys Fluent
+        \item Étude statistique de l'atomisation
+      \end{itemize}
+    }
+    {
+      diphasique,
+      level-set method,
+      vof method,
+      volumes finis,
+      Ansys Fluent
+    }
+
+\end{experiences}
+
+\sectionTitle{Publications}{\faBook}
+\begin{publications}
+  \nocite{*}
+  \printbibliography[heading=none]
+\end{publications}
+
+\sectionTitle{Compétences}{\faTasks}
+\begin{keywords}
+  \keywordsentry{Simulation Numérique}{
+    \textbf{Méthodes spectrales},
+    Méthodes de Krylov,
+    Différences/Volumes/Éléments Fini(e)s,
+    Schémas d'ordres élevés,
+    Schémas implicites,
+    \textbf{DNS}}
+  \keywordsentry{Programmation}{
+    C/C++,
+    \textbf{Fortran},
+    \textbf{Python},
+    Rust,
+    \textbf{MPI},
+    OpenMP,
+    \textbf{CUDA},
+    Dash,
+    \textbf{FFTW},
+    HDF5}
+  \keywordsentry{Outils de développement}{
+    \textbf{Linux},
+    \textbf{Nix},
+    SLURM,
+    \textbf{Git},
+    Visual Studio,
+    VS Code,
+    \textbf{(Neo)vim}}
+  \keywordsentry{Langues}{
+    Français (langue maternelle),
+    Anglais (C1)}
+\end{keywords}
+
+\sectionTitle{Références}{\faQuoteLeft}
+\begin{referees}
+  \referee
+    {Bastien Di Pierro}
+    {Maître de Conférences}
+    {Université Lyon1, LMFA}
+    {bastien.di-pierro@univ-lyon1.fr}
+    {r4 72 43 14 44}
+  \hfill
+  \referee
+    {Frédéric Alizard}
+    {Maître de Conférences}
+    {Université Lyon1, LMFA}
+    {frederic.alizard@univ-lyon1.fr}
+    {04 72 18 61 54}
+\end{referees}
+
+\end{document}

@@ -15,7 +15,14 @@ indent_size=2
 [Justfile]
 indent_style=tab
 
+[*.tex]
+max_line_length=unset
+
+[*.bib]
+indent_size=1
+max_line_length=unset
+
 [*.lock]
-indent_size = unset
-indent_style = unset
+indent_size=unset
+indent_style=unset
 

@@ -88,7 +88,10 @@
             deadnix.enable = true;
             editorconfig-checker.enable = true;
             statix.enable = true;
-            typos.enable = true;
+            typos = {
+              enable = true;
+              excludes = ["cv-fr.tex"];
+            };
           };
         };
       };
