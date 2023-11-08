@@ -26,7 +26,7 @@
     flake-utils.lib.eachSystem supportedSystems (system: let
       pkgs = import nixpkgs {inherit system;};
       pkgName = "cv";
-      pkgVersion = "0.0";
+      pkgVersion = "2023-11-06";
       yaac = pkgs.stdenv.mkDerivation rec {
         name = "yaac";
         pname = name;
