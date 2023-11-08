@@ -101,7 +101,13 @@
           just
           texlive-yaac
         ];
-        inherit (self.checks.${system}.pre-commit-check) shellHook;
+        shellHook = ''
+          mkdir -p ".cache/texmf-var"
+          export TEXMFHOME=".cache"
+          export TEXMFVAR=".cache/texmf-var"
+          export SOURCE_DATE_EPOCH="${lastModified}"
+          ${self.checks.${system}.pre-commit-check.shellHook}
+        '';
       };
     });
 }
